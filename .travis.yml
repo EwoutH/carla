@@ -2,7 +2,7 @@ language: cpp
 compiler: clang
 
 os: linux
-dist: xenial
+dist: bionic
 sudo: false
 
 matrix:
@@ -13,7 +13,7 @@ matrix:
         apt:
           sources:
             - ubuntu-toolchain-r-test
-            - llvm-toolchain-xenial-8
+            - llvm-toolchain-bionic-8
           packages:
             - g++-7 # we need this one for the libstdc++.
             - clang-8
